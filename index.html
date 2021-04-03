@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <title>VR</title>
+    </head>
+
+    <body>
+        <a-scene>
+            <a-assets>
+                <a-asset-item id="forest" src="./assets/forest_path/scene.gltf"></a-asset-item>
+                <img id="sky" src="./assets/sky1.jpg">
+            </a-assets>
+
+            <a-sky radius="5000" src="#sky"></a-sky>
+            <a-camera rotation="0 0 0" wasd-controls="fly:true;"></a-camera>
+            <a-entity id="f1" gltf-model="#forest" position="0 -30 0"></a-entity>
+            <a-entity id="f2" gltf-model="#forest" position="-11.753 -37 -104.416"></a-entity>
+        </a-scene>
+    </body>
+</html>
